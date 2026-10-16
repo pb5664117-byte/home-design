@@ -1,0 +1,49 @@
+
+    <h2>Room Properties</h2>
+    <div class="fields">
+      <label>X Position
+        <input id="roomX" type="number" value="0" min="0">
+      </label>
+      <label>Y Position
+        <input id="roomY" type="number" value="0" min="0">
+      </label>
+      <label>Length
+        <input id="editLength" type="number" value="12" min="4">
+      </label>
+      <label>Breadth
+        <input id="editBreadth" type="number" value="10" min="4">
+      </label>
+    </div>
+    <button id="applyProperties">Apply Changes</button>
+  </section>
+
+  <section class="panel">
+    <div class="toolbar">
+      <button id="undo">↶ Undo</button>
+      <button id="redo">↷ Redo</button>
+      <button id="saveDesign">Save</button>
+      <button id="loadDesign">Load</button>
+      <button id="exportImage">Export 2D PNG</button>
+    </div>
+    <p id="status" aria-live="polite">Ready to design.</p>
+  </section>
+
+  <section class="panel">
+    <h2>2D Floor Plan</h2>
+    <p>Room select karne ke liye tap karo. Room ko drag bhi kar sakte ho.</p>
+    <div id="planWrap">
+      <canvas id="plan"></canvas>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>🏡 3D House Preview</h2>
+    <p>3D model ko finger se drag karke ghumao.</p>
+    <div class="toolbar">
+      <button id="show3D">Build / Refresh 3D</button>
+      <button id="reset3D">Reset Camera</button>
+    </div>
+    <div id="house3D"></div>
+    <p id="status3D" aria-live="polite">3D preview ready nahi hai.</p>
+  </section>
+</div>
